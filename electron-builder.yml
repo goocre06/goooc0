@@ -1,0 +1,25 @@
+appId: com.umrah.manager
+productName: نظام إدارة المعتمرين
+copyright: Copyright © 2026
+asar: true
+compression: maximum
+
+directories:
+  output: desktop-release
+
+extraMetadata:
+  main: electron/main.cjs
+
+files:
+  - dist/**/*
+  - electron/**/*
+
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+  artifactName: نظام إدارة المعتمرين.exe
+
+portable:
+  artifactName: نظام إدارة المعتمرين.exe
